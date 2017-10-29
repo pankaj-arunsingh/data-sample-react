@@ -1,33 +1,23 @@
-
 import React, { Component } from 'react';
+import Header from './header';
+import TopBar from './topBar'
+import SideMenu from './sideMenu';
+import MainContent from './mainContent';
 import './bootstrap/css/bootstrap.min.css';
 import './App.css';
-import customerData from './customerData'
-
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      items: []
-    }
-  }
-
-  componentDidMount() {
-    var _this = this;
-      _this.setState({
-        items: customerData
-  });
-  }
-
+class App extends Component {
   render() {
-    const renderItems = this.state.items.map(function(item, i) {
-      return <li key={i}>{item.name}</li>
-    });
-
     return (
-      <ul className="App">
-        {renderItems}
-      </ul>
+      <div className="App">
+       <Header/>
+       <TopBar/>
+       <div className="row no-right-margin">
+       <SideMenu/>
+       <MainContent/>
+       </div>
+      </div>
     );
   }
 }
+
+export default App;
