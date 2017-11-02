@@ -7,61 +7,61 @@ export default
     "duration":"1 year ago"
 },
 {
-   "name":"Pankaj Singh",
+   "name":"Poonam Singh",
     "email":"joker@gmail.com",
     "date":"Oct 1, 2016",
     "duration":"1 year ago"
 },
 {
-    "name":"Pankaj Singh",
+    "name":"Ishan Singh",
     "email":"joker@gmail.com",
     "date":"Oct 1, 2016",
     "duration":"1 year ago"
 },
 {
-    "name":"Pankaj Singh",
+    "name":"Dabeil Singh",
     "email":"joker@gmail.com",
     "date":"Oct 1, 2016",
     "duration":"1 year ago"
 },
 {
-   "name":"Pankaj Singh",
+   "name":"Amanda Singh",
     "email":"joker@gmail.com",
     "date":"Oct 1, 2016",
     "duration":"1 year ago"
 },
 {
-    "name":"Pankaj Singh",
+    "name":"Safer Singh",
     "email":"joker@gmail.com",
     "date":"Oct 1, 2016",
     "duration":"1 year ago"
 },
 {
-    "name":"Pankaj Singh",
+    "name":"Melody Singh",
     "email":"joker@gmail.com",
     "date":"Oct 1, 2016",
     "duration":"1 year ago"
 },
 {
-    "name":"Pankaj Singh",
+    "name":"Preetam Singh",
     "email":"joker@gmail.com",
     "date":"Oct 1, 2016",
     "duration":"1 year ago"
 },
 {
-    "name":"Pankaj Singh",
+    "name":"Suresh Singh",
     "email":"joker@gmail.com",
     "date":"Oct 1, 2016",
     "duration":"1 year ago"
 },
 {
-  "name":"Pankaj Singh",
+  "name":"why  Singh",
     "email":"joker@gmail.com",
     "date":"Oct 1, 2016",
     "duration":"1 year ago"
 },
 {
-    "name":"Pankaj Singh",
+    "name":"Samosa  Singh",
     "email":"joker@gmail.com",
     "date":"Oct 1, 2016",
     "duration":"1 year ago"

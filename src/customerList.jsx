@@ -14,18 +14,28 @@ class CustomerList extends Component {
             items: customerData
         });
     }
-    filterList(event){
-        var nameList=this.state.items.map(function(item){
+    filterList(event) {
+        let nameList = customerData.map(function (item) {
             return item.name;
         });
-        var updatedNameList=nameList.filter(function(item){
+        console.log("nameList "+nameList);
+        let updatedNameList = nameList.filter(function (item) {
             return item.toLowerCase().search(
-                event.target.value.toLowerCase())!==-1;
+                event.target.value.toLowerCase()) !== -1;
         });
-        var updatedList=this.state.items.map(function(item,i){
-             if(item.name===updatedNameList[i]){return item;}
-        })
-        this.setState({items:updatedList!==null?updatedList:[]});
+        console.log("updatedNameList "+updatedNameList);
+        let updatedList =[];
+        customerData.forEach(function (item) {
+            if(updatedNameList.length!==0){
+                updatedNameList.forEach(function(element) {
+                   if(element===item.name){
+                       updatedList.push(item);
+                   }
+                });
+            }
+        });
+        console.log("updatedList "+updatedList)
+        this.setState({ items: updatedList !== null ? updatedList : [] });
     }
     render() {
 
@@ -55,7 +65,7 @@ class CustomerList extends Component {
                     <span className="input-group-addon glyphicon glyphicon-search" style={searchIcon}></span>
                     <input type="text" className="form-control" placeholder="Search" style={searchBox} onChange={this.filterList.bind(this)} />
                 </div>
-                <ListItem items={this.state.items}/>
+                <ListItem items={this.state.items} />
             </section>
         );
     }
