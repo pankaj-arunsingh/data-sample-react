@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import customerData from './customerData';
+//import customerData from './customerData';
 import ListItem from './listItem';
+var customerData=[];
 class CustomerList extends Component {
     constructor(props) {
         super(props);
@@ -8,11 +9,20 @@ class CustomerList extends Component {
             items: []
         }
     }
-    componentWillMount() {
-        var _this = this;
-        _this.setState({
-            items: customerData
+    fetchData(){
+        let _this=this;
+        return fetch('http://localhost:3010/customerData')
+		.then(function(res){
+            return res.json();
+        }).then(function(myRes){
+            customerData=myRes;
+            _this.setState({items:myRes});
+        }).catch(function(error){
+            console.log(error);
         });
+    }
+    componentWillMount() {
+        this.fetchData();
     }
     filterList(event) {
         let nameList = customerData.map(function (item) {
